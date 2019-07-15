@@ -1,0 +1,39 @@
+#include<iostream>
+#include<conio.h>
+#include<cstring>
+
+using namespace std;
+
+char password[] = "";
+
+string word = "Yes";
+
+int santa;
+
+int proverka(int santa);
+
+int main()
+{
+	
+		cout << "Enter the password: ";
+		cin >> password;
+
+	    proverka(int(santa));
+
+	system("pause");
+	return 0;
+}
+
+int proverka(int santa)
+{
+	if (password == word)
+	{
+		cout << "Password is correct! ";
+	}
+	if (password != word)
+	{
+		cout << "Password is not raight ";
+	}
+
+	return 0;
+}

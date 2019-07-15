@@ -1,0 +1,64 @@
+#include <iostream>
+#include <string>
+#include<conio.h>
+#include<cstring>
+
+using namespace std; 
+
+class Weapon
+{
+public:
+	virtual void Use() = 0;
+};
+
+class Gun :public Weapon
+{
+public:
+	virtual void Use() 
+	{
+		cout << "BUNG!" << endl;
+	}
+};
+class SubmiteGun:public Gun
+{
+public:
+	void Use() override
+	{
+		cout << "BUNG! BUNG! BUNG!" << endl;
+	}
+};
+class Revolver :public Gun
+{
+public:
+	void Use() override
+	{
+		cout << "Revolver! BAM!!!";
+	}
+};
+class Knife :public Weapon
+{
+public:
+	void Use() 
+	{
+		cout << "VJUG!!!";
+	}
+};
+class Player
+{
+public:
+	void Use(Weapon *weapon)
+	{
+	     weapon->Use();
+	}
+};
+int main()
+{
+	setlocale(LC_ALL, "rus");
+	 	
+	Player player;
+	Knife knife;
+	player.Use(&knife);
+
+	system("pause");
+	return 0;
+}

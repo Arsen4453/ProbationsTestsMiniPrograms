@@ -1,0 +1,23 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int main() {
+
+	setlocale(LC_ALL, "rus");
+
+	int massOne[15] = {  35933,803445,499752,932504,627531,983229,831488,801913,539260,220266,639614 ,520641,331125 ,607886,156968 };
+	int massTwo[15] = { 640008,943757, 549461,549377,694858, 610065,997746,346953,337864,810643, 256243,212359, 652317,652722,184491 };
+	int Result[15] = {};
+
+
+	for (int i = 0; i < 15;i++)
+	{
+		Result[i] = massOne[i] + massTwo[i];
+		cout << Result[i] << " ";
+	}
+
+	_getch();
+	return 0;
+
+}

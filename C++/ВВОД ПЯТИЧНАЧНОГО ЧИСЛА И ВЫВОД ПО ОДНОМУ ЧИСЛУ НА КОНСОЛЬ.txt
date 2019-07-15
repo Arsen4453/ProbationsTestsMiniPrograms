@@ -1,0 +1,31 @@
+#include<iostream>
+#include<conio.h>
+#include<string>
+
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "rus");
+
+	int five;
+	start:
+	cout << "Введите пятизначное число: ";
+	cin >> five;
+
+	if (five > 10000 && five < 999999) 
+	{
+		cout << " Первая цифра введенного числа: " << (five / 10000) % 10 << endl;
+		cout << " Вторая цифра введенного числа: " << (five / 1000) % 10 << endl;
+		cout << " Третья цифра введенного числа: " << (five / 100) % 10 << endl;
+		cout << " Четвертая цифра введенного числа: " << (five / 10) % 10 << endl;
+		cout << " Пятая цифра введенного числа: " << (five / 1) % 10 << endl;
+	}
+	else {
+		cout << "Вы введи неправильное число попробуйте снова:" << endl;
+	}
+	goto start;
+
+ _getch();
+ return 0;
+}

@@ -1,0 +1,29 @@
+#include<iostream>
+#include<conio.h>
+#include<cstring>
+#include<string>
+
+using namespace std;
+
+void result(int hours, int minutes)
+{
+	cout << "Time: " << endl;
+	cout << hours;
+	cout << ":";
+	cout << minutes;
+}
+int main()
+{
+	setlocale(LC_ALL, "rus");
+
+	int hours; int minutes;
+
+	cout << "¬ведите количство часов: ";
+	cin >> hours;
+	cout << "¬ведите количкство минут: ";
+	cin >> minutes;
+	result(hours, minutes);
+
+	_getch();
+	return 0;
+}

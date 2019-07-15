@@ -1,0 +1,70 @@
+#include<iostream>
+#include<conio.h>
+#include<string>
+#include<string>
+
+using namespace std;
+
+int second;
+int first;
+int finish;
+int finishTwo;
+int finishThre;
+int finishFour;
+
+int firstNumber(int first);
+int secondNumber(int second);
+int finishPlus(int finish);
+int finishSub(int finishTwo);
+int finishMult(int finishThre);
+int finishDivade(int finishFour);
+
+int main()
+{
+    finishPlus(int(finish));
+	finishSub(int(finishTwo));
+	finishMult(int(finishThre));
+	finishDivade(int(finishFour));
+
+	system("pause");
+	return 0;
+}
+
+int firstNumber(int first)
+{
+	cout << "Enter the first number: ";
+	cin >> first;
+
+	return first;
+}
+int secondNumber(int second)
+{
+	cout << "Enter the second number: ";
+	cin >> second;
+
+	return second;
+}
+int finishPlus(int finish)
+{
+	cout << "Result is:(+) " << firstNumber(int(first)) + secondNumber(int(second));
+	system("Pause");
+	return 0;
+}
+int finishSub(int finishTwo)
+{
+	cout << "Result is:(-) " << firstNumber(int(first)) - secondNumber(int(second));
+	system("Pause");
+	return 0;
+}
+int finishMult(int finishThre)
+{
+	cout << "Result is:(*) " << firstNumber(int(first)) * secondNumber(int(second));
+	system("Pause");
+	return 0;
+}
+int finishDivade(int finishFour)
+{
+	cout << "Result is:(/) " << firstNumber(int(first)) / secondNumber(int(second));
+	system("Pause");
+	return 0;
+}

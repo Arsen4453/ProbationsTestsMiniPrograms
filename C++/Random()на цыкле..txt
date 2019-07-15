@@ -1,0 +1,26 @@
+#include<iostream>
+#include<conio.h>
+#include<ctime>
+
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "rus");
+
+	srand(time(NULL));
+
+	int const size = 100;
+	int Arr[size];
+
+	for (int i = 0; i < size; i++)
+	{
+		Arr[size] = rand() % 50;
+		cout << "Random numbers is :" << Arr[size] << endl;
+
+	}
+
+
+	_getch();
+	return 0;
+}

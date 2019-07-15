@@ -1,0 +1,50 @@
+#include<iostream>
+#include<conio.h>
+#include<string>
+
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "rus");
+
+	int bigF = 1; int indexF = 2; int middleF = 3; int ringF = 4; int littleF = 5;
+	int result;
+	result = bigF, indexF, middleF, ringF, littleF;
+	
+	do
+	{
+		cout << "Введите порядковый номер пальца руки :" << endl;
+		cin >> result;
+
+		if (result == bigF)
+		{
+			cout << "большой палец" << endl;
+		}
+		if (result == indexF)
+		{
+			cout << "указательный палец" << endl;
+		}
+		if (result == middleF)
+		{
+			cout << "средний палец";
+		}
+		if (result == ringF)
+		{
+			cout << "безимяный палец" << endl;
+		}
+		if (result == littleF)
+		{
+			cout << "маленький палец" << endl;
+		}
+		if (result >= 6)
+		{
+			cout << "Error!" << endl;
+		}
+	} while (result != 0);
+	
+
+
+	_getch();
+	return 0;
+}

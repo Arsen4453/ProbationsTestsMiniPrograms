@@ -1,0 +1,24 @@
+#include<iostream>
+#include<conio.h>
+#include<string>
+#include<string>
+
+using namespace std;
+
+
+int main()
+{
+	setlocale(LC_ALL, "rus");
+
+	cout << "¬ведите слово "  << endl;
+	string word;
+	cin >> word;
+	for (int i = word.size() - 1; i >= 0; i--)
+	{
+		cout << word[i];
+	}
+
+
+	_getch();
+	return 0;
+}

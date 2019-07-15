@@ -1,0 +1,37 @@
+#include<iostream>
+#include<conio.h>
+#include<string>
+#include<string>
+using namespace std;
+
+int product;
+
+int main()
+{
+	setlocale(LC_ALL, "rus");
+	
+	cout << "Выберите фрукт  " << endl;
+	cout << "1. Яблоко " << endl;
+	cout << "2. Лимон " << endl;
+	cout << "3. Персик " << endl;
+
+	do {
+
+		if (product == 1)
+		{
+			cout << "Вы выбрали Яблоко " << endl;
+		}
+		if (product == 2)
+		{
+			cout << "Вы выбрали Лимон " << endl;
+		}
+		if (product == 3)
+		{
+			cout << "Вы выбрали Персик " << endl;
+		}
+		cin >> product;
+	} while (product != 0);
+
+	_getch();
+	return 0;
+}

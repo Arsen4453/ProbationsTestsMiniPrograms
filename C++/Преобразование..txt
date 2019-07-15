@@ -1,0 +1,22 @@
+#include<iostream>
+#include<conio.h>
+#include<cstring>
+#include<string>
+
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "rus");
+	int farlong;
+
+	cout << "Введите растояние в Фарлонгах: ";
+	cin >> farlong;
+
+	int result = farlong * 220;
+
+	cout << farlong << " фарлонгов будет " << result << " Ярдов. " << endl;
+
+	_getch();
+	return 0;
+}
